@@ -1,0 +1,22 @@
+[Unit]
+Description=Fsociety's distributed currency daemon
+After=network.target
+
+[Service]
+User=fsocietycore
+Group=fsocietycore
+
+Type=forking
+PIDFile=/var/lib/fsocietyd/fsocietyd.pid
+ExecStart=/usr/bin/fsocietyd -daemon -pid=/var/lib/fsocietyd/fsocietyd.pid \
+-conf=/etc/fsocietycore/fsociety.conf -datadir=/var/lib/fsocietyd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

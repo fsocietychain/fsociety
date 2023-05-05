@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fsociety Core
+Comment=Fsociety P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Fsociety peer-to-peer Netzwerk
+Comment[fr]=Fsociety, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Fsociety, eşten eşe kriptografik sanal para birimi
+Exec=fsociety-qt %u
+Terminal=false
+Type=Application
+Icon=fsociety128
+MimeType=x-scheme-handler/fsociety;
+Categories=Office;Finance;

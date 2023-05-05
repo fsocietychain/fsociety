@@ -1,0 +1,6 @@
+usr/local/bin/fsociety-qt usr/bin
+share/pixmaps/fsociety32.xpm usr/share/pixmaps
+share/pixmaps/fsociety16.xpm usr/share/pixmaps
+share/pixmaps/fsociety128.png usr/share/pixmaps
+debian/fsociety-qt.desktop usr/share/applications
+debian/fsociety-qt.protocol usr/share/kde4/services/

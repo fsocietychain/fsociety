@@ -1,0 +1,33 @@
+# /etc/conf.d/fsocietyd: config file for /etc/init.d/fsocietyd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/fsocietycore/fsociety.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/fsocietyd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/fsocietyd.pid"
+
+# Where to write fsocietyd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/fsocietyd"
+
+# User and group to own fsocietyd process
+#BITCOIND_USER="fsocietycore"
+#BITCOIND_GROUP="fsocietycore"
+
+# Path to fsocietyd executable
+#BITCOIND_BIN="/usr/bin/fsocietyd"
+
+# Nice value to run fsocietyd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for fsocietyd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

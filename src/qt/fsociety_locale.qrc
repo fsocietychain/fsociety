@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/fsociety_ar.qm</file>
+        <file alias="bg">locale/fsociety_bg.qm</file>
+        <file alias="de">locale/fsociety_de.qm</file>
+        <file alias="en">locale/fsociety_en.qm</file>
+        <file alias="es">locale/fsociety_es.qm</file>
+        <file alias="fi">locale/fsociety_fi.qm</file>
+        <file alias="fr">locale/fsociety_fr.qm</file>
+        <file alias="it">locale/fsociety_it.qm</file>
+        <file alias="ja">locale/fsociety_ja.qm</file>
+        <file alias="ko">locale/fsociety_ko.qm</file>
+        <file alias="nl">locale/fsociety_nl.qm</file>
+        <file alias="pl">locale/fsociety_pl.qm</file>
+        <file alias="pt">locale/fsociety_pt.qm</file>
+        <file alias="ro">locale/fsociety_ro.qm</file>
+        <file alias="ru">locale/fsociety_ru.qm</file>
+        <file alias="sk">locale/fsociety_sk.qm</file>
+        <file alias="th">locale/fsociety_th.qm</file>
+        <file alias="tr">locale/fsociety_tr.qm</file>
+        <file alias="vi">locale/fsociety_vi.qm</file>
+        <file alias="zh_CN">locale/fsociety_zh_CN.qm</file>
+        <file alias="zh_TW">locale/fsociety_zh_TW.qm</file>
+    </qresource>
+</RCC>
