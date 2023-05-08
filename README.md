@@ -5,7 +5,7 @@ Fsociety Core Latest v0.0.1.01
 |-|-|-|
 
 Introduction
-"We are fsociety, we are finally free, we are finally awake!"
+The name FSociety, FSC itself is the pronunciation of the word Tough which means tough!
 
 
 License

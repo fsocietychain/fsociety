@@ -563,9 +563,19 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0xf59828cf4def471df48f8453a6d22706637456b1f5bda5bc6debf7d6d9583ad9"));
         assert(genesis.hashMerkleRoot == uint256S("0x4c230a37cc3633079058a414a5d17bfcb2c0b15cf6e56a41ceff85771b7acd68"));
 
-        vSeeds.emplace_back("35.157.7.138:15277, true");
-        //vSeeds.emplace_back("usseed.fsociety.com");
-       //vSeeds.emplace_back("seed.fsociety.com");
+        vSeeds.emplace_back("ns1.fsocietychain.com");
+        vSeeds.emplace_back("ns2.fsocietychain.com");
+        vSeeds.emplace_back("ns3.fsocietychain.com");
+		vSeeds.emplace_back("ns4.fsocietychain.com");
+        vSeeds.emplace_back("ns5.fsocietychain.com, true");
+        vSeeds.emplace_back("ns6.fsocietychain.com, true");
+		vSeeds.emplace_back("ns7.fsocietychain.com, true");
+        vSeeds.emplace_back("ns1.fastboost.org");
+        vSeeds.emplace_back("ns2.fastboost.org");
+		vSeeds.emplace_back("ns3.fastboost.org");
+        vSeeds.emplace_back("ns4.fastboost.org");
+        vSeeds.emplace_back("ns5.fastboost.org, true");
+		vSeeds.emplace_back("ns6.fastboost.org, true");
 
 
 
@@ -723,9 +733,9 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
 
-        //vSeeds.emplace_back("tnet.fsociety.com");
-        //vSeeds.emplace_back("tnet1.fsociety.com", true);
-        //vSeeds.emplace_back("tnet2.fsociety.com", true);
+        vSeeds.emplace_back("tns1.fsocietychain.com");
+        vSeeds.emplace_back("tns2.fsocietychain", true);
+        vSeeds.emplace_back("tns3.fsocietychain", true);
 
         // Testnet Fsociety addresses start with 't'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
@@ -776,7 +786,7 @@ public:
         nPoolNewMaxParticipants = 20;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        vSporkAddresses = {"TVjkd8bSveaBgYFV59QdvQ2KXc2nFPcTS7"};
+        vSporkAddresses = {"F9MADUJXkDWj3r5BQoyZozjYXbgvxAR8sA"};
         nMinSporkKeys = 1;
         fBIP9CheckSmartnodesUpgraded = true;
 
