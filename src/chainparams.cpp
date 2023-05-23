@@ -566,18 +566,11 @@ public:
         vSeeds.emplace_back("ns1.fsocietychain.com");
         vSeeds.emplace_back("ns2.fsocietychain.com");
         vSeeds.emplace_back("ns3.fsocietychain.com");
-		vSeeds.emplace_back("ns4.fsocietychain.com");
-        vSeeds.emplace_back("ns5.fsocietychain.com, true");
-        vSeeds.emplace_back("ns6.fsocietychain.com, true");
-		vSeeds.emplace_back("ns7.fsocietychain.com, true");
-        vSeeds.emplace_back("ns1.fastboost.org");
-        vSeeds.emplace_back("ns2.fastboost.org");
-		vSeeds.emplace_back("ns3.fastboost.org");
-        vSeeds.emplace_back("ns4.fastboost.org");
-        vSeeds.emplace_back("ns5.fastboost.org, true");
-		vSeeds.emplace_back("ns6.fastboost.org, true");
-
-
+	vSeeds.emplace_back("ns4.fsocietychain.com");
+        vSeeds.emplace_back("ns5.fsocietychain.com");
+        vSeeds.emplace_back("ns6.fsocietychain.com");
+	vSeeds.emplace_back("ns7.fsocietychain.com");
+        vSeeds.emplace_back("ns8.fsocietychain.com");
 
         // Fsociety addresses start with 'F'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
@@ -642,7 +635,9 @@ public:
 
         checkpointData = {
           {  
-
+          {1000, uint256S("0x39d2ade77baa33dc9293ba897a70d80d6262db342d84012099c0caef250022df")},
+          {5000, uint256S("0xf7c822b5eb91eee35570b4035708ecac12965321b1bbba8ce217f5e9f234ee81")},
+          {10000, uint256S("0x3ae1a0dbeb895b50270df81a8ec345ab7d64f90a3b27329c3c691b25d993d00e")}
           }
         };
 
