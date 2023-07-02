@@ -29,7 +29,7 @@ for help and more information.
 * See the [Fsociety Developer Documentation](https://fsociety-docs.github.io/) 
 for technical specifications and implementation details.
 * Ask for help on [Fsociety Nation Discord](http://fsocietychat.org)
-* Ask for help on the [Fsociety Forum](https://fsociety.com/forum)
+* Ask for help on the [Fsociety Forum](https://fsocietychain.com/forum)
 
 Building
 ---------------------
@@ -59,7 +59,7 @@ The Fsociety Core repo's [root README](/README.md) contains relevant information
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Fsociety Forum](https://fsociety.com/forum), in the Development & Technical Discussion board.
+* Discuss on the [Fsociety Forum](https://fsocietychain.com/forum), in the Development & Technical Discussion board.
 * Discuss on [Fsociety Nation Discord](http://fsocietychat.org)
 
 ### Miscellaneous
