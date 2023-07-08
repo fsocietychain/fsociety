@@ -566,10 +566,10 @@ public:
         vSeeds.emplace_back("ns1.fsocietychain.com");
         vSeeds.emplace_back("ns2.fsocietychain.com");
         vSeeds.emplace_back("ns3.fsocietychain.com");
-	vSeeds.emplace_back("ns4.fsocietychain.com");
+	    vSeeds.emplace_back("ns4.fsocietychain.com");
         vSeeds.emplace_back("ns5.fsocietychain.com");
         vSeeds.emplace_back("ns6.fsocietychain.com");
-	vSeeds.emplace_back("ns7.fsocietychain.com");
+	    vSeeds.emplace_back("ns7.fsocietychain.com");
         vSeeds.emplace_back("ns8.fsocietychain.com");
 
         // Fsociety addresses start with 'F'
