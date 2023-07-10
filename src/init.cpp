@@ -651,7 +651,7 @@ void SetupServerArgs()
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/fsocietychain/fsociety>";
-    const std::string URL_WEBSITE = "<https://fsociety.com>";
+    const std::string URL_WEBSITE = "<https://fsocietychain.com>";
 
     return CopyrightHolders(_("Copyright (C)"), 2014, COPYRIGHT_YEAR) + "\n" +
            "\n" +

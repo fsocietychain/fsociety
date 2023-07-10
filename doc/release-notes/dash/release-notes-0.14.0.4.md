@@ -3,7 +3,7 @@ Fsociety Core version 0.14.0.4
 
 Release is now available from:
 
-  <https://www.fsociety.com/downloads/#wallets>
+  <https://www.fsocietychain.com/downloads/#wallets>
 
 This is a new minor version release, bringing various bugfixes and improvements.
 

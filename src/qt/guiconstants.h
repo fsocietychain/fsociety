@@ -43,10 +43,10 @@ static const int MAX_URI_LENGTH = 255;
 #define QR_IMAGE_SIZE 300
 
 /* Number of frames in spinner animation */
-#define SPINNER_FRAMES 36
+#define SPINNER_FRAMES 1
 
 #define QAPP_ORG_NAME "Fsociety"
-#define QAPP_ORG_DOMAIN "fsociety.com"
+#define QAPP_ORG_DOMAIN "fsocietychain.com"
 #define QAPP_APP_NAME_DEFAULT "Fsociety-Qt"
 #define QAPP_APP_NAME_TESTNET "Fsociety-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "Fsociety-Qt-%s"

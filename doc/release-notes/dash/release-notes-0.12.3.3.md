@@ -3,7 +3,7 @@ Fsociety Core version 0.12.3.3
 
 Release is now available from:
 
-  <https://www.fsociety.com/downloads/#wallets>
+  <https://www.fsocietychain.com/downloads/#wallets>
 
 This is a critical bugfix release.
 

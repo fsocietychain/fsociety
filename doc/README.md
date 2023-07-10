@@ -1,7 +1,7 @@
 Fsociety Core
 ==========
 
-This is the official reference wallet for Fsociety digital currency and comprises the backbone of the Fsociety peer-to-peer network. You can [download Fsociety Core](https://www.fsociety.com/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Fsociety digital currency and comprises the backbone of the Fsociety peer-to-peer network. You can [download Fsociety Core](https://www.fsocietychain.com/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -24,7 +24,7 @@ Drag Fsociety-Qt to your applications folder, and then run Fsociety-Qt.
 
 ### Need Help?
 
-* See the [Fsociety documentation](https://docs.fsociety.com)
+* See the [Fsociety documentation](https://docs.fsocietychain.com)
 for help and more information.
 * See the [Fsociety Developer Documentation](https://fsociety-docs.github.io/) 
 for technical specifications and implementation details.

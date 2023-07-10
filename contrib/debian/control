@@ -1,8 +1,8 @@
 Source: fsociety
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@fsociety.com>
-Uploaders: Holger Schinzel <holger@fsociety.com>
+Maintainer: Holger Schinzel <holger@fsocietychain.com>
+Uploaders: Holger Schinzel <holger@fsocietychain.com>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,7 +26,7 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.fsociety.com/
+Homepage: https://www.fsocietychain.com/
 Vcs-Git: git://github.com/fsocietychain/fsociety.git
 Vcs-Browser: https://github.com/fsocietychain/fsociety
 
