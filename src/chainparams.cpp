@@ -571,6 +571,8 @@ public:
         vSeeds.emplace_back("ns6.fsocietychain.com");
 	    vSeeds.emplace_back("ns7.fsocietychain.com");
         vSeeds.emplace_back("ns8.fsocietychain.com");
+		vSeeds.emplace_back("ns9.fsocietychain.com");
+		vSeeds.emplace_back("ns10.fsocietychain.com");
 
         // Fsociety addresses start with 'F'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
@@ -589,7 +591,7 @@ public:
 //        	std::cout << "mainnet is disable" << endl;
 //        	exit(0);
 //        }
-        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 20} };// 5% founder/dev fee forever
+        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 20} };
         consensus.nFounderPayment = FounderPayment(rewardStructures, 250);
         consensus.nCollaterals = SmartnodeCollaterals(
           { {88580, 700000 * COIN},
@@ -635,10 +637,13 @@ public:
 
         checkpointData = {
           {  
+		  {10, uint256S("0x3c64db6a5c8a1594bb077c2d764b3066e31e703b4ebfea29ecb146087fbbd14e")},
+		  {100, uint256S("0x296f91907fba832b1155e34fafa111764400de6656a30293a37b99541584c2de")},
           {1000, uint256S("0x39d2ade77baa33dc9293ba897a70d80d6262db342d84012099c0caef250022df")},
           {5000, uint256S("0xf7c822b5eb91eee35570b4035708ecac12965321b1bbba8ce217f5e9f234ee81")},
           {10000, uint256S("0x3ae1a0dbeb895b50270df81a8ec345ab7d64f90a3b27329c3c691b25d993d00e")},
-		  {40000, uint256S("0x347fbbf59e840438e39dfbe15ad7a3237f2f9b5e211261e73137fac089a76dff")}
+		  {40000, uint256S("0x347fbbf59e840438e39dfbe15ad7a3237f2f9b5e211261e73137fac089a76dff")},
+		  {60000, uint256S("0xab7dba6b5debc53190d1b3347a40024e4e495c78f2c44dbe63e0f479a6082cf0")}
           }
         };
 
@@ -764,7 +769,7 @@ public:
 
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.8,0.2,0.0);
 
-        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 5}  };// 5% founder/dev fee forever
+        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 20}  };
         consensus.nFounderPayment = FounderPayment(rewardStructures, 200, "rghjACzPtVAN2wydgDbn9Jq1agREu6rH1e");
 
         fDefaultConsistencyChecks = false;
@@ -877,7 +882,7 @@ public:
         consensus.hashDevnetGenesisBlock = devnetGenesis.GetHash();
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.8,0.2,0.0);
 
-        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 5} };// 5% founder/dev fee forever
+        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 20} };
 
         consensus.nFounderPayment = FounderPayment(rewardStructures, 200);
 
@@ -1038,7 +1043,7 @@ printf("REG MERKLE ROOT: %s\n",genesis.hashMerkleRoot.ToString().c_str());
         nMinSporkKeys = 1;
         // regtest usually has no smartnodes in most tests, so don't check for upgraged MNs
         fBIP9CheckSmartnodesUpgraded = false;
-        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 5} };// 5% founder/dev fee forever
+        std::vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 20} };
 
         consensus.nFounderPayment = FounderPayment(rewardStructures, 200);
 

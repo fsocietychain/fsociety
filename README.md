@@ -1,11 +1,16 @@
-Fsociety Core Latest v0.0.1.01
+Fsociety Core Latest v0.0.1.02
 ===========================
 
 |CI|master|develop|
 |-|-|-|
 
 Introduction
-We are #FSOCIETY! #FSC Our democracy has been hacked! Join the Revolution!
+In a rapidly evolving digital landscape, Fsociety (FSC) aims to revolutionize the world of
+open digital money. This whitepaper introduces Fsociety, a cryptocurrency designed to
+empower individuals, promote decentralized systems, and foster financial inclusivity. By
+combining smartnodes, passive earnings, and mineable capabilities through the innovative
+ghostrider algorithm, Fsociety seeks to create a more hopeful and prosperous future for all.
+Link: https://fsocietychain.com/assets/whitepaper.pdf
 
 
 License
