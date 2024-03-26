@@ -1150,7 +1150,7 @@ std::string CopyrightHolders(const std::string& strPrefix, unsigned int nStartYe
 
     // Check for untranslated substitution to make sure Dash Core copyright is not removed by accident
     if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Fsociety Core") == std::string::npos) {
-        strCopyrightHolders += "\n" + strPrefix + strprintf(" %u-%u ", 2021, nEndYear) + "The Fsociety Core developers";
+        strCopyrightHolders += "\n" + strPrefix + strprintf(" %u-%u ", 2023, nEndYear) + "The Fsociety Core developers";
     }
 
     // Check for untranslated substitution to make sure Dash Core copyright is not removed by accident
