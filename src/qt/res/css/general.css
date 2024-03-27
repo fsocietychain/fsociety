@@ -35,7 +35,7 @@ in the <theme.css> file.
 #00000000
 #222222
 #5e8c41
-#a84832
+#cc0000
 #c79304
 
 </colors>
@@ -1335,7 +1335,7 @@ QWidget .QFrame#frame .QLabel#label_5 { /* Wallet Label */
 
 QWidget .QFrame#frame .QLabel#labelWalletStatus { /* Wallet Sync Status */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
-    color: #a84832;
+    color: #cc0000;
 }
 
 QWidget .QFrame#frame .QLabel#labelSpendable { /* Spendable Header */
@@ -1446,7 +1446,7 @@ QWidget .QFrame#frameCoinJoin .QLabel#labelCoinJoinHeader { /* CoinJoin Header *
 
 QWidget .QFrame#frameCoinJoin .QLabel#labelCoinJoinSyncStatus { /* CoinJoin Sync Status */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
-    color: #a84832;
+    color: #cc0000;
 }
 
 QWidget .QFrame#frameCoinJoin  .QLabel#labelCoinJoinEnabledText { /* CoinJoin Enabled Status Label */
@@ -1534,7 +1534,7 @@ QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 
 QWidget .QFrame#frame_2 .QLabel#labelTransactionsStatus { /* Recent Transactions Sync Status */
     qproperty-alignment: 'AlignVCenter | AlignLeft';
-    color: #a84832;
+    color: #cc0000;
 }
 
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
@@ -1627,7 +1627,7 @@ QWidget#RPCConsole .QGroupBox #line { /* Network In Line */
 }
 
 QWidget#RPCConsole .QGroupBox #line_2 { /* Network Out Line */
-    background-color: #a84832;
+    background-color: #cc0000;
 }
 
 #rpcAutoCompleter {
@@ -1679,7 +1679,7 @@ QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlChangeL
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlInsuffFunds { /* Insufficient Funds Label */
-    color: #a84832;
+    color: #cc0000;
 }
 
 QDialog#SendCoinsDialog .QScrollArea#scrollArea .QWidget#scrollAreaWidgetContents { /* Send To Widget */
