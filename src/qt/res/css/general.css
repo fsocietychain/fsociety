@@ -1424,6 +1424,77 @@ QWidget .QFrame#frame .QLabel#labelWatchTotal { /* Watch-only Total Balance */
     margin-left: 16px;
 }
 
+
+
+/******************************************************
+OverviewPage Mining
+******************************************************/
+
+QWidget .QFrame#frameMining { /* Mining Widget */
+    background-color: #00000000;
+    max-width: 451px;
+    max-height: 350px;
+}
+
+QWidget .QFrame#frameMining > .QLabel {
+    min-width: 100px;
+    min-height: 26px;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelMiningHeader { /* Mining Header */
+    qproperty-alignment: 'AlignVCenter | AlignLeft';
+    margin-right: 5px;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelMiningSyncStatus { /* Mining Sync Status */
+    qproperty-alignment: 'AlignVCenter | AlignLeft';
+    color: #cc0000;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelMiningStatusText { /* Mining Status Label */
+    qproperty-alignment: 'AlignVCenter | AlignRight';
+    margin-right: 10px;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelMiningStatusValue { /* Mining Status Value */
+
+}
+
+QWidget .QFrame#frameMining .QLabel#labelHashRateText { /* Hash Rate Label */
+    qproperty-alignment: 'AlignVCenter | AlignRight';
+    margin-right: 10px;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelHashRateValue { /* Hash Rate Value */
+
+}
+
+QWidget .QFrame#frameMining .QLabel#labelThreadsText { /* Threads Label */
+    qproperty-alignment: 'AlignVCenter | AlignRight';
+    margin-right: 10px;
+}
+
+QWidget .QFrame#frameMining .QSpinBox#threadSpinBox { /* Threads SpinBox */
+    min-height: 26px;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelBlocksMinedText { /* Blocks Mined Label */
+    qproperty-alignment: 'AlignVCenter | AlignRight';
+    margin-right: 10px;
+}
+
+QWidget .QFrame#frameMining .QLabel#labelBlocksMinedValue { /* Blocks Mined Value */
+
+}
+
+QWidget .QFrame#frameMining .QPushButton#startStopButton { /* Start/Stop Mining Button */
+    margin-top: 5px;
+}
+
+QWidget .QFrame#frameMining .QPushButton#startStopButton:hover {
+    /* Aggiungi stili per l'hover se necessario */
+}
+
 /******************************************************
 OverviewPage CoinJoin
 ******************************************************/

@@ -23,6 +23,8 @@
 #include <QSettings>
 #include <QTimer>
 
+#include <miner.h>
+
 #define ITEM_HEIGHT 54
 #define NUM_ITEMS_DISABLED 5
 #define NUM_ITEMS_ENABLED_NORMAL 6
@@ -116,7 +118,8 @@ OverviewPage::OverviewPage(QWidget* parent) :
     clientModel(0),
     walletModel(0),
     cachedNumISLocks(-1),
-    txdelegate(new TxViewDelegate(this))
+    txdelegate(new TxViewDelegate(this)),
+    isMining(false)
 {
     ui->setupUi(this);
 
@@ -124,6 +127,11 @@ OverviewPage::OverviewPage(QWidget* parent) :
                       ui->label_5,
                       ui->labelCoinJoinHeader
                      }, GUIUtil::FontWeight::Bold, 16);
+                     
+    GUIUtil::setFont({ui->label_4,
+                      ui->label_5,
+                      ui->labelMiningHeader
+                     }, GUIUtil::FontWeight::Bold, 16);                 
 
     GUIUtil::setFont({ui->labelTotalText,
                       ui->labelWatchTotal,
@@ -152,6 +160,7 @@ OverviewPage::OverviewPage(QWidget* parent) :
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");
     ui->labelCoinJoinSyncStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelMiningStatusValue->setText("Inactive");
 
     ui->labelAnonymizedText->setText(tr("%1 Balance").arg("CoinJoin"));
 
@@ -164,7 +173,20 @@ OverviewPage::OverviewPage(QWidget* parent) :
 
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(coinJoinStatus()));
+    
+    
+// Connect Start/Stop button to handler function
+connect(ui->startStopButton, &QPushButton::clicked, this, &OverviewPage::onStartStopClicked);
+
+// Set default thread count
+ui->threadSpinBox->setValue(1);
+
+// Set timer to update mining stats
+connect(&miningTimer, &QTimer::timeout, this, &OverviewPage::updateMiningStats);
+miningTimer.start(1000); // Update every second
+
 }
+
 
 void OverviewPage::handleTransactionClicked(const QModelIndex &index)
 {
@@ -692,3 +714,54 @@ void OverviewPage::DisableCoinJoinCompletely()
     }
     walletModel->coinJoin().stopMixing();
 }
+
+void OverviewPage::onStartStopClicked()
+{
+ if (isMining) {
+ // Stop mining
+ isMining = false;
+ ui->startStopButton->setText("Start Mining");
+ ui->labelMiningStatusValue->setText("Inactive");
+ ui->labelMiningStatusValue->setStyleSheet("color: #cc0000;");
+ GenerateFsocietys(false, 0, Params()); // Pass the third parameter
+ } else {
+ // Start mining
+ isMining = true;
+ ui->startStopButton->setText("Stop Mining");
+ ui->labelMiningStatusValue->setText("Active");
+ ui->labelMiningStatusValue->setStyleSheet("color: green;");
+ int threads = ui->threadSpinBox->value(); // Get the number of threads
+ GenerateFsocietys(true, threads, Params()); // Pass the third parameter
+ }
+}
+
+
+double OverviewPage::GetHashRate()
+{
+ return ::GetHashRate(); // Use the global function defined in miner.cpp
+}
+
+void OverviewPage::updateMiningStats()
+
+{
+ if (isMining) {
+   // Get the hash rate from the miner
+   double hashesPerSec = GetHashRate(); 
+
+   // Format the hash rate for display
+   QString hashText;
+   if (hashesPerSec >= 1000000) {
+   hashText = QString("%1 MH/s").arg(hashesPerSec / 1000000, 0, 'f', 2);
+   } else if (hashesPerSec >= 1000) {
+   hashText = QString("%1 KH/s").arg(hashesPerSec / 1000, 0, 'f', 2);
+   } else {
+   hashText = QString("%1 H/s").arg(hashesPerSec, 0, 'f', 2);
+   }
+
+   // Update the label
+   ui->labelHashRateValue->setText(hashText);
+   } else {
+   ui->labelHashRateValue->setText("0 H/s");
+   }
+   
+ }

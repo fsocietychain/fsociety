@@ -78,6 +78,18 @@ int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParam
     return nNewTime - nOldTime;
 }
 
+// miner.cpp
+double GetHashRate()
+{
+// Check if mining is active
+if (!GenerateFsocietys)
+return 0.0;
+
+// Return the calculated hash rate
+return nHashesPerSec;
+}
+
+
 BlockAssembler::Options::Options() {
     blockMinFeeRate = CFeeRate(DEFAULT_BLOCK_MIN_TX_FEE);
     nBlockMaxSize = DEFAULT_BLOCK_MAX_SIZE;

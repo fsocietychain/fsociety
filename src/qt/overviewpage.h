@@ -10,6 +10,8 @@
 #include <QWidget>
 #include <memory>
 
+#include <QTimer>
+
 class ClientModel;
 class TransactionFilterProxy;
 class TxViewDelegate;
@@ -59,16 +61,29 @@ private:
 
     void SetupTransactionList(int nNumItems);
     void DisableCoinJoinCompletely();
+    
+ bool miningActive; // Mining status (active/inactive)
+ QTimer miningTimer; // Timer to update the hash rate
+
+ double GetHashRate(); // Function to get the hash rate from the miner
+
+ bool isMining; // Add this line
+
 
 private Q_SLOTS:
-    void toggleCoinJoin();
-    void updateDisplayUnit();
-    void updateCoinJoinProgress();
-    void updateAdvancedCJUI(bool fShowAdvancedCJUI);
-    void handleTransactionClicked(const QModelIndex &index);
-    void updateAlerts(const QString &warnings);
-    void updateWatchOnlyLabels(bool showWatchOnly);
-    void handleOutOfSyncWarningClicks();
+ void toggleCoinJoin();
+ void updateDisplayUnit();
+ void updateCoinJoinProgress();
+ void updateAdvancedCJUI(bool fShowAdvancedCJUI);
+ void handleTransactionClicked(const QModelIndex &index);
+ void updateAlerts(const QString &warnings);
+ void updateWatchOnlyLabels(bool showWatchOnly);
+ void handleOutOfSyncWarningClicks();
+
+ void onStartStopClicked(); // Slot to handle Start/Stop button click
+ void updateMiningStats(); // Slot to update mining stats
+    
 };
+
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H
