@@ -599,7 +599,8 @@ public:
             {176580, 1100000 * COIN},
             {220580, 1350000 * COIN},
             {264580, 1600000 * COIN},
-            {INT_MAX, 1900000 * COIN}
+			{720000, 1900000 * COIN},
+            {INT_MAX, 10000000 * COIN}
           },
           { {8580, 0}, {INT_MAX, 45} }
         );
@@ -642,9 +643,10 @@ public:
           {1000, uint256S("0x39d2ade77baa33dc9293ba897a70d80d6262db342d84012099c0caef250022df")},
           {5000, uint256S("0xf7c822b5eb91eee35570b4035708ecac12965321b1bbba8ce217f5e9f234ee81")},
           {10000, uint256S("0x3ae1a0dbeb895b50270df81a8ec345ab7d64f90a3b27329c3c691b25d993d00e")},
-	  {40000, uint256S("0x347fbbf59e840438e39dfbe15ad7a3237f2f9b5e211261e73137fac089a76dff")},
-	  {60000, uint256S("0xab7dba6b5debc53190d1b3347a40024e4e495c78f2c44dbe63e0f479a6082cf0")},
-          {200000, uint256S("0x5a2de375120cd1e3592cf29986a1d073a07e046c7553d13b6f27f82202cac9e6")}
+	      {40000, uint256S("0x347fbbf59e840438e39dfbe15ad7a3237f2f9b5e211261e73137fac089a76dff")},
+	      {60000, uint256S("0xab7dba6b5debc53190d1b3347a40024e4e495c78f2c44dbe63e0f479a6082cf0")},
+          {200000, uint256S("0x5a2de375120cd1e3592cf29986a1d073a07e046c7553d13b6f27f82202cac9e6")},
+		  {719000, uint256S("0xf7f25a3cadb21338e87c31199c8d1db4df66dea2f51e2e7933cd806520d5ffb3")}
           }
         };
 
