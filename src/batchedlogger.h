@@ -7,6 +7,7 @@
 #define FSOCIETY_BATCHEDLOGGER_H
 
 #include "tinyformat.h"
+#include <cstdint>
 
 class CBatchedLogger
 {
